@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Weather Api</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <script type="text/javascript" src="../js/index.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    </head>
+    <body>
+            <div class="ui inverted vertical masthead center aligned segment">
+              <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                  <a class="active item">Home</a>
+                </div>
+              </div>
+            </div>
+            <h2 class="ui header">Select a location or grant access to your location to see the weather for your precise location</h2>
+
+            <div class="ui vertical stripe segment">
+                <form action="" method="get" id="form">
+                    <div class="form-group">
+                        <label for="q">Get weather information about a city</label>
+                        <input type="text" id="q" name="q" class="form-control" placeholder="City">
+                    </div>
+                    <p>
+                        <input type="submit" class="btn btn-primary" value="Search">
+                    </p>
+                </form>
+                <pre id="results" class="mt-5">
+                    
+                </pre>
+            </div>
+    </body>
+</html>
