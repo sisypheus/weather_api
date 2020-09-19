@@ -5,13 +5,13 @@ const request = async url => {
     return response.ok ? response.json() : Promise.reject({error: 500});
 };
 
-const getWeatherInfo = async ( element, form ) => {
+const getWeatherInfo = async (element, form) => {
     try {
         const q = form.querySelector('#q').value;
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${API_KEY}`;
         const response = await request(url);
-        element.innerText = JSON.stringify(response);
-
+        //element.innerText = JSON.stringify(response);
+        element.innerText = response.main.temp;
     } catch(err) {
         console.log(err);
     }

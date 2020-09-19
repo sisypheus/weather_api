@@ -1,0 +1,6 @@
+pre {
+    width: 600px;
+    word-break: break-word;
+    overflow: auto;
+    white-space: pre-wrap;
+}
