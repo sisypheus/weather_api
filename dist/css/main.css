@@ -4,3 +4,11 @@ pre {
     overflow: auto;
     white-space: pre-wrap;
 }
+
+.ui.label {
+    font-size: 1em;
+}
+
+.ui.header:first-child {
+    margin-top: 20px;
+}

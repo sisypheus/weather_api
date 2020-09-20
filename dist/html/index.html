@@ -20,19 +20,25 @@
                 </div>
               </div>
             </div>
-            <h2 class="ui header">Select a location or grant access to your location to see the weather for your precise location</h2>
 
-            <div class="ui vertical stripe segment">
-                <form action="" method="get" id="form">
-                    <div class="ui action input">
-                      <label for="q">Get weather information about a city</label>
-                      <input type="text" id="q" placeholder="Search...">
-                      <button class="ui button">Search</button>
-                    </div>
-                </form>
-                <pre id="results" class="mt-5">
-                    
-                </pre>
+            <div class="ui container">
+              <h2 class="ui header">Select a location or grant access to your location to see the weather for your precise location</h2>
+              <div class="ui vertical stripe segment">
+                <div class="ui form">
+                  <form action="" method="get" id="form">
+                      <div class="ui action input">
+                        <label class="ui label">Get weather information about a city</label>
+                        <input type="text" id="q" placeholder="Your city">
+                        <button class="ui button">Search</button>
+                      </div>
+                  </form>
+                </div>
+                  <div class="ui container">
+                    <pre id="results">
+                      
+                    </pre>
+                  </div>
+              </div>
             </div>
     </body>
 </html>

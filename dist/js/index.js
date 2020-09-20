@@ -13,7 +13,8 @@ const getWeatherInfo = async (element, form) => {
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${q}&appid=${API_KEY}`;
         const response = await request(url);
         //element.innerText = JSON.stringify(response);
-        element.innerText = response.main.temp;
+        element.innerText = "Actuellement, il fait " + to_degree(response.main.temp) + " à " + q + '.'; //+ response.coord.lat + response.coord.lon;
+        console.log(response);
     } catch(err) {
         console.log(err);
     }
@@ -26,3 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
         getWeatherInfo(document.querySelector('#results'), form);
     }, false);
 });
+
+///////////
+
+function to_degree(temp) {
+    temp -= 273.15;
+    return temp;
+}
