@@ -1,7 +1,5 @@
 import {API_KEY} from './secrets.js';
 
-//const API_KEY = '9c08c70c211d111c1764de9691e3c902';
-
 const request = async url => {
     const response = await fetch(url);
     return response.ok ? response.json() : Promise.reject({error: 500});
